@@ -1,6 +1,7 @@
 <head>
 
   <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css" />
   <script src="/js/vendor/particles.min.js"></script>
 
 </head>
@@ -15,10 +16,10 @@
   </header>
   </div>
 -->
-  <div id="qbila-background"></div>
 
   <div class="container-fluid a-slideContainer d-noSidePadding">
     <div class="row a-slide d-bgImage" id="qbila-slideOne">
+      <div id="qbila-background"></div>
       <div class="text-center a-slideContent">
           <div style="margin: auto;" class="container">
             <div class="row">
@@ -32,7 +33,7 @@
               </div>
               <div class="col-sm-12 a-qbilaVideo" style="margin-top: 20px; padding-top: 20px;">
                 <div class="" style="position: relative; display: inline-block;">
-                  <iframe style="padding: 10px; border: 2px solid #0094ff; background: #ffffff; border-radius: 5px;"
+                  <iframe id="pageVideo" style="padding: 10px; border: 2px solid #0094ff; background: #ffffff; border-radius: 5px;"
                     src="https://player.vimeo.com/video/107754494?autoplay=0&api=1&color=ffffff&title=0&byline=0&portrait=0"
                     frameborder="0"
                     webkitallowfullscreen mozallowfullscreen allowfullscreen>
@@ -40,10 +41,16 @@
 
                   <div class="hidden-xs a-openVideoInModal" data-toggle="modal" data-target=".a-videoModal"></div>
 
-                  <div class="modal fade a-videoModal" tabindex="-1" role="dialog">
-                    <div class="modal-dialog modal-lg">
-                      <div class="">
-                        <iframe style="padding: 10px; border: 2px solid #0094ff; background: #ffffff; border-radius: 5px;"
+                  <div class="modal fade a-videoModal" tabindex="-1" role="dialog" data-backdrop="static">
+                    <span type="button"
+                            class="glyphicon glyphicon-remove"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                            style="position: absolute; right: 0; top: 0; color: #a0a0a0; font-size: 40px; padding: 20px; cursor: pointer;">
+                    </span>
+                    <div class="modal-dialog modal-lg" style="padding-top: 65px;">
+                      <div>
+                        <iframe id="modalVideo" style="padding: 10px; border: 2px solid #0094ff; background: #ffffff; border-radius: 5px;"
                           src="https://player.vimeo.com/video/107754494?autoplay=0&api=1&color=ffffff&title=0&byline=0&portrait=0"
                           frameborder="0"
                           webkitallowfullscreen mozallowfullscreen allowfullscreen>
@@ -54,9 +61,14 @@
 
                 </div>
               </div>
+              <div class="" style="display: none; position: absolute; bottom: 0px; width: 100%; text-align: center;">
+                <div class="">Know More</div>
+                <i class="fa fa-angle-down" style="font-size: 50px; line-height: 1;"></i>
+              </div>
             </div>
           </div>
       </div>
+
     </div>
 
     <div class="row a-slide d-bgImage a-slide-half" id="aboutQbila-Image"

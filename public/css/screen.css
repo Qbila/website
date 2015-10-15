@@ -543,15 +543,19 @@ header .logo {
 	word-spacing: 3px; margin-left: auto; margin-right: auto;
 }
 
-#qbila-slideOne canvas {
-	display: block; vertical-align: bottom; position: absolute; top: 0px;
+#qbila-slideOne {
+	position: relative;
 }
 
-#qbila-background {height: 100%; width: 100%; position: absolute;}
+#qbila-slideOne canvas {
+	display: block; vertical-align: bottom;
+}
+
+#qbila-background {height: 100%; width: 100%; position: absolute; top: 0px;}
 
 #qbila-slideOne .a-qbilaVideo iframe {width: 400px; height: 245px;}
 
-#qbila-slideOne .a-qbilaVideo .a-videoModal iframe {width: 750px; height: 422px;}
+#qbila-slideOne .a-qbilaVideo .a-videoModal iframe {width: 750px; height: 430px;}
 #qbila-slideOne .a-qbilaVideo .a-videoModal .modal-lg {width: 750px;}
 
 @media (max-width:450px) {
@@ -576,5 +580,8 @@ header .logo {
 	height: 100%; width: 100%; position: absolute; background: transparent; top: 0;
 }
 
-
-/*width="750" height="422" */
+.modal-backdrop {background-color: #ffffff;}
+.modal-backdrop.in {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
