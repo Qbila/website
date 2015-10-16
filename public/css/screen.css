@@ -10,6 +10,7 @@
 
 html
 	{background: #ffffff;}
+
 ul, ol
 	{list-style: none; padding: 0; margin: 0;}
 
@@ -26,6 +27,8 @@ a {cursor: pointer;}
 a:hover, a:focus {
   text-decoration: underline;
 }
+
+body {font-family: MyriadPro-Light, 'Helvetica Neue', Georgia, 'Times new roman'; }
 
 
 /*****************************************************************/
@@ -102,8 +105,6 @@ a:hover, a:focus {
 header.navbar
 	{background: #0094FF; margin-bottom: 0px;}
 
-
-
 a.navbar-brand
 	{display: inline-block;}
 
@@ -171,48 +172,6 @@ header	.navbar-toggle
 
 /***** END : BOOTSTRAP ******/
 
-/********* START : TWITTER TYPEAHEAD **********/
-.tt-dropdown-menu {
-	background-color: #ffffff;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	border-radius: 0 0 4px 4px;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-	margin-top: 0px;
-	padding: 0 0 4px 0;
-	width: 100%;
-	color: #333;
-	box-sizing:border-box;
-	line-height: 30px;
-	max-height: 210px;
-	overflow-y: scroll;
-}
-
-.tt-query {
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-}
-
-.tt-suggestion {
-    font-size: 14px;
-    padding: 2px 10px;
-    border-top:1px solid #ccc;
-    cursor: pointer;
-}
-
-.tt-suggestion.tt-cursor {
-    background-color: rgb(200,37,6);
-    color: #FFFFFF;
-}
-
-.tt-suggestion p {
-    margin: 0;
-}
-
-.twitter-typeahead{
-	width : 100%;
-}
-
-/********* END : TWITTER TYPEAHEAD **********/
-
 /*****************************************************************/
 /********* END : ADD TO OR OVERRIDE LIBRARY STYPES *************/
 /*****************************************************************/
@@ -275,97 +234,6 @@ header	.navbar-toggle
 	font-variant: normal;
 	font-weight: 300;
 }
-
-.share {
-	margin-right: 10px;
-	width: 26px;
-  	height: 26px;
-  	display: inline-block;
-}
-
-.gplus_share_small {
-  background-image: url(/img/gplus_share_small.png);
-  background-repeat: no-repeat;
-}
-
-.twitter_share_small {
-  background-image: url(/img/twitter_share_small.png);
-  background-repeat: no-repeat;
-}
-
-.fb_share_small {
-  background-image: url(/img/fb_share_small.png);
-  background-repeat: no-repeat;
-}
-
-.name_block_small_img {
-  vertical-align: top;
-  margin-left: 60px;
-}
-
-.small_pic {
-  width: 50px;
-  border-radius: 25px;
-  vertical-align: top;
-}
-
-.footer .footer-inner {
-  padding-top: 35px;
-}
-
-.footer .section-title {
-  color: #ccc;
-  font-size: 13px;
-  margin-bottom: 15px;
-}
-
-.footer a {
-  color: #fff;
-  font-size: 13px;
-}
-
-.footer ul li {
-  margin-bottom: 3px;
-}
-
-.footer {
-  background-color: #676767;
-  color: #fff;
-  padding-bottom: 25px;
-}
-
-.gplus_share_small:hover, .gplus_share_small_fill {
-  background-image: url(/img/gplus_share_small_fill.png);
-  background-repeat: no-repeat;
-  width: 26px;
-  height: 26px;
-  display: inline-block;
-}
-
-.twitter_share_small:hover, .twitter_share_small_fill {
-  background-image: url(/img/twitter_share_small_fill.png);
-  background-repeat: no-repeat;
-  width: 26px;
-  height: 26px;
-  display: inline-block;
-}
-
-.fb_share_small:hover, .fb_share_small_fill {
-  background-image: url(/img/fb_share_small_fill.png);
-  background-repeat: no-repeat;
-  width: 26px;
-  height: 26px;
-  display: inline-block;
-}
-
-.footer .footer-outer, .footer .footer-copyright {
-  margin-top: 35px;
-}
-
-.footer .footer-outer, .footer .footer-copyright {
-  margin-top: 35px;
-}
-
 /*****************************************************************/
 /************ END: SUPPORT FOR SITE.CSS STYLES*******************/
 /*****************************************************************/
@@ -378,35 +246,14 @@ header	.navbar-toggle
 
 /********* START : DESIGN LOGIC : COMPONENT STYLES **********/
 
-.d-supportText, .a-systemHelp
-	{color: #707070;}
-
 .d-blockUnit
 	{margin-bottom: 20px;}
-
-.d-blockUnit.a-askQuestion
-	{border-radius: 3px; padding: 20px;}
-
-.a-askQuestion textarea
-	{resize: none;}
-
-.d-grayItem
-	{background: #e5e5e5;}
-
-.a-help
-	{}
 
 .d-title
 	{font-weight: bold; margin-bottom: 10px;}
 
 .d-whiteItem
 	{padding: 10px; background-color: #fff; border-radius: 2px;}
-
-.d-check
-	{background-color: #24984D; padding: 2px;}
-
-.d-check i
-	{background: url(../../img/tick_white.png) no-repeat; display: inline-block; width: 20px; height: 20px;}
 
 .d-4CharInput
 	{width: 70px !important;}
@@ -444,16 +291,14 @@ header	.navbar-toggle
 		width: 100%; max-width: 980px;
 	}
 
-.a-slide .a-nextSlide  {position: absolute; width: 100%; bottom: 15px; color: #ffffff;}
+.a-slide .a-nextSlide  {position: absolute; width: 100%; bottom: 0px; color: #000000; font-size: 18px;}
+.a-slide .a-nextSlide .fa-angle-down {font-size: 50px; line-height: 30px;}
+.a-slide .a-nextSlide .d-button {cursor: pointer;}
 
 .a-slide.a-slide-half {max-height: 500px;}
 
 .a-slideContent h1 {
 	letter-spacing: 1px; font-size: 50px;
-}
-
-#specialityPage .a-slideContent h1 {
-	font-size: 43px;
 }
 
 .a-slideContent .d-text
@@ -464,53 +309,10 @@ header	.navbar-toggle
 .d-zeroGapContainer
 	{margin-top: -20px; padding-left: 0px; padding-right: 0px; padding-top: 0px;}
 
-.footer {border-top: 2px solid #f5f5f5;}
-
-
 .d-zeroGapContainer .d-headerPadding
 	{padding-top: 75px;}
 
-
 .d-helpText {margin: 5px 0px; line-height: 1.3;}
-
-
-/** Margin at the top to handle fixed navbar */
-.a-curatedPage
-	{margin-top: 70px;}
-
-.divider {
-  height: 1px;
-  margin: 9px 0;
-  overflow: hidden;
-  background-color: #e5e5e5;
-}
-
-.btn, .btn-lg, .btn-sm, .btn-xs
-	{border-radius: 0px;}
-
-.a-slideContainer .d-bgImage {
- 	background: url('/img/landing-page-background.jpg') no-repeat;
-	background-size: cover; background-position: -210px center;
-}
-
-/* .a-slideContainer[data-speciality = 'sexologist'] .d-bgImage {
- 	background: url('/img/consultPrivately-sexologist.jpg') no-repeat;
-	background-size: cover; background-position: center center;
-}
-
-.a-slideContainer[data-speciality = 'dietitian'] .d-bgImage {
-	background: url('/img/consultPrivately-dietician.jpg') no-repeat;
-	background-size: cover; background-position: -45px center;
-}
- */
-
-@media (min-width: 1170px) {
-	.a-slideContainer[data-speciality = 'sexologist'] .d-bgImage,
-	.a-slideContainer[data-speciality = 'dietician'] .d-bgImage,
-	.a-slideContainer .d-bgImage {
-	 	background-position: 0 center;
-	}
-}
 
 .nav>li>a:hover, .nav>li>a:focus {background-color: rgba(255, 255, 255, 0.3); border-color: rgb(116, 231, 252);}
 
@@ -521,9 +323,6 @@ header	.navbar-toggle
 .d-noSidePadding {padding-left: 0px; padding-right: 0px;}
 
 .a-qbilaFor span {margin-top: 10px; display: inline-block;}
-
-
-body {font-family: MyriadPro-Light, 'Helvetica Neue', Georgia, 'Times new roman'; }
 
 header .logo {
 	font-size: 80px; display: inline-block; padding: 7px 25px 12px 25px;
@@ -553,10 +352,42 @@ header .logo {
 
 #qbila-background {height: 100%; width: 100%; position: absolute; top: 0px;}
 
-#qbila-slideOne .a-qbilaVideo iframe {width: 400px; height: 245px;}
+#qbila-slideOne .a-qbilaVideo iframe {
+	width: 400px; height: 245px; border-radius: 5px;
+	padding: 10px; border: 2px solid #0094ff; background: #ffffff;
+}
 
 #qbila-slideOne .a-qbilaVideo .a-videoModal iframe {width: 750px; height: 430px;}
-#qbila-slideOne .a-qbilaVideo .a-videoModal .modal-lg {width: 750px;}
+#qbila-slideOne .a-qbilaVideo .a-videoModal .modal-lg {width: 750px; padding-top: 65px;}
+
+#qbila-slideOne .a-qbilaVideo {margin-top: 10px; padding-top: 10px; margin-bottom: 60px;}
+#qbila-slideOne .a-qbilaVideo .d-wrapper {position: relative; display: inline-block;}
+
+.a-videoModal .glyphicon-remove {
+	position: absolute; right: 0; top: 0; color: #a0a0a0;
+	font-size: 40px; padding: 20px; cursor: pointer;
+}
+
+.a-openVideoInModal {
+	height: 100%; width: 100%; position: absolute; background: transparent; top: 0;
+}
+
+.modal-backdrop {background-color: #ffffff;}
+.modal-backdrop.in {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.d-noSidePadding .row {margin-left: 0px; margin-right: 0px;}
+
+.a-social ul li {display: inline-block; padding: 10px 15px; font-size: 20px; }
+
+.a-nextSlide {position: absolute; bottom: 0px; width: 100%; text-align: center;}
+
+#aboutQbila-Image {height: 100%; background: #0951B6; color: #ffffff;}
+#aboutQbila-Image h1 {color: #ffffff;}
+
+/************* RESPONSIVE CSS ****************/
 
 @media (max-width:450px) {
 	#qbila-slideOne .logo {
@@ -574,14 +405,4 @@ header .logo {
 	#qbila-slideOne .a-qbilaVideo iframe {
 	  width: 280px; height: 175px;
 	}
-}
-
-.a-openVideoInModal {
-	height: 100%; width: 100%; position: absolute; background: transparent; top: 0;
-}
-
-.modal-backdrop {background-color: #ffffff;}
-.modal-backdrop.in {
-  filter: alpha(opacity=100);
-  opacity: 1;
 }

@@ -5,7 +5,7 @@ $(document).ready(function(){
 	// while viewport height is below 465, keep it 465.
 	// while viewport height is more than that, change it to maximum.
 
-	var slideMinHeight = 465;
+	var slideMinHeight = 500;
 	var viewPortDimensions;
 	var slides = $('.a-slide');
 
