@@ -381,6 +381,8 @@ header .logo {
 .d-noSidePadding .row {margin-left: 0px; margin-right: 0px;}
 
 .a-social ul li {display: inline-block; padding: 10px 15px; font-size: 20px; }
+.a-social a {color: #404040;}
+.a-social a:hover {text-decoration: none; color: #000000;}
 
 .a-nextSlide {position: absolute; bottom: 0px; width: 100%; text-align: center;}
 
