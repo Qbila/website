@@ -302,7 +302,7 @@ header	.navbar-toggle
 }
 
 .a-slideContent .d-text
-	{line-height: 1.6; text-align: left;}
+	{line-height: 1.6;}
 
 .row.a-slide {margin-left: 0px; margin-right: 0px;}
 
@@ -322,7 +322,14 @@ header	.navbar-toggle
 
 .d-noSidePadding {padding-left: 0px; padding-right: 0px;}
 
-.a-qbilaFor span {margin-top: 10px; display: inline-block;}
+.a-qbilaFor {margin-top: 10px;}
+.a-qbilaFor .d-image {padding: 0px; margin-bottom: 20px;}
+.a-qbilaFor .d-text {line-height: 1.2; font-weight: normal; font-size: 18px; font-weight: bold;}
+.a-qbilaFor .d-image img {height: 120px;}
+
+.a-qbilaWorks {
+	margin-top: 50px; font-size: 20px; font-weight: bold;
+}
 
 header .logo {
 	font-size: 80px; display: inline-block; padding: 7px 25px 12px 25px;
@@ -337,7 +344,7 @@ header .logo {
 }
 /*border: 3px solid #0094ff;*/
 
-#aboutQbila-Image .a-slideContent {
+.a-slideContent {
 	font-weight: normal; font-size: 30px; margin-top: 15px; letter-spacing: 1px;
 	word-spacing: 3px; margin-left: auto; margin-right: auto;
 }
@@ -382,14 +389,22 @@ header .logo {
 
 .a-social ul li {display: inline-block; padding: 10px 15px; font-size: 20px; }
 .a-social a {color: #404040;}
-.a-social a:hover {text-decoration: none; color: #000000;}
+.a-social a:hover, .a-social a:focus {text-decoration: none; color: #000000;}
 
 .a-nextSlide {position: absolute; bottom: 0px; width: 100%; text-align: center;}
 
-#aboutQbila-Image {height: 100%; background: #0951B6; color: #ffffff;}
-#aboutQbila-Image h1 {color: #ffffff;}
+#aboutQbila-believe {height: 100%; background: #0951B6; color: #ffffff;}
+#aboutQbila-believe h1 {color: #ffffff;}
+
+#qbilaWeb-footer {margin-top: 10px; padding-top: 10px; border-top: 1px solid #404040;}
 
 /************* RESPONSIVE CSS ****************/
+
+@media (max-width: 768px) {
+	.a-qbilaFor .d-text {
+		padding-top: 55px; padding-left: 25px; text-align: left;
+	}
+}
 
 @media (max-width:450px) {
 	#qbila-slideOne .logo {
@@ -398,7 +413,7 @@ header .logo {
 
 	#qbila-slideOne .a-qbilaPunchline {font-size: 20px;}
 
-	#aboutQbila-Image .a-slideContent {
+	.a-slideContent {
 		font-size: 22px;
 	}
 
@@ -406,5 +421,18 @@ header .logo {
 
 	#qbila-slideOne .a-qbilaVideo iframe {
 	  width: 280px; height: 175px;
+	}
+
+	.a-qbilaFor .d-image img {
+		height: 90px;
+	}
+
+	.a-qbilaFor {
+		border-bottom: 1px solid #d5d5d5;
+	}
+
+	.a-qbilaFor .d-text {
+		padding-top: 33px;
+		font-size: 16px; text-align: left;
 	}
 }
