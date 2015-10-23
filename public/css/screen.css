@@ -402,7 +402,21 @@ header .logo {
 
 @media (max-width: 768px) {
 	.a-qbilaFor .d-text {
-		padding-top: 55px; padding-left: 25px; text-align: left;
+		padding-top: 30px; padding-left: 25px; text-align: left; padding-right: 0px;
+	}
+
+	.a-slideContent h1 {font-size: 35px;}
+
+	.a-slideContent {
+		font-size: 22px;
+	}
+
+	.a-qbilaFor .d-image img {
+	  height: 80px;
+	}
+
+	.a-qbilaWorks {
+	  margin-top: 20px;
 	}
 }
 
@@ -414,25 +428,38 @@ header .logo {
 	#qbila-slideOne .a-qbilaPunchline {font-size: 20px;}
 
 	.a-slideContent {
-		font-size: 22px;
+		font-size: 20px;
 	}
 
-	.a-slideContent h1 {font-size: 40px;}
+	.a-slideContent h1 {font-size: 35px;}
 
 	#qbila-slideOne .a-qbilaVideo iframe {
 	  width: 280px; height: 175px;
 	}
 
 	.a-qbilaFor .d-image img {
-		height: 90px;
+		height: 65px;
 	}
 
 	.a-qbilaFor {
 		border-bottom: 1px solid #d5d5d5;
 	}
 
+	.a-qbilaFor:last-child {
+		border-bottom-width: 0px;
+	}
+
 	.a-qbilaFor .d-text {
-		padding-top: 33px;
-		font-size: 16px; text-align: left;
+		padding-top: 25px;
+		font-size: 16px;
+		text-align: left;
+	}
+
+	.a-qbilaFor .d-image {
+		margin-bottom: 10px;
+	}
+
+	.a-qbilaWorks {
+		margin-top: 15px;
 	}
 }
