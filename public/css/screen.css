@@ -345,7 +345,7 @@ header .logo {
 /*border: 3px solid #0094ff;*/
 
 .a-slideContent {
-	font-weight: normal; font-size: 30px; margin-top: 15px; letter-spacing: 1px;
+	font-weight: normal; font-size: 27px; margin-top: 15px; letter-spacing: 1px;
 	word-spacing: 3px; margin-left: auto; margin-right: auto;
 }
 
@@ -396,9 +396,94 @@ header .logo {
 #aboutQbila-believe {height: 100%; background: #0951B6; color: #ffffff;}
 #aboutQbila-believe h1 {color: #ffffff;}
 
-#qbilaWeb-footer {margin-top: 10px; padding-top: 10px; border-top: 1px solid #404040;}
+#qbilaWeb-footer {padding-top: 10px; border-top: 1px solid #404040;}
+
+#qbila-forGovernment .d-bgImage,
+#qbila-forCitizen .d-bgImage,
+#qbila-forResearchers .d-bgImage,
+#qbila-asSeenIn .d-bgImage
+	{padding: 45px 0;}
+
+#qbila-forGovernment .a-slideContent,
+#qbila-forResearchers .a-slideContent,
+#qbila-forCitizen .a-slideContent,
+#qbila-asSeenIn .a-slideContent {
+	font-size: 22px;
+}
+
+.a-whatsFor > .row {
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #d5d5d5;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.a-whatsFor > .row:last-child {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	border-bottom: 0px;
+}
+
+.a-whatsFor .a-pointImage {
+	width: 200px; text-align: center;
+}
+
+.a-whatsFor img {width: 150px;}
+
+.a-whatsFor .row .a-inclusiveGrowth {float: none; max-width: 560px; margin: auto;}
+
+.a-inclusiveGrowth .a-logo {display: inline-block; padding: 10px;}
+
+.a-inclusiveGrowth .a-logo img {width: 180px;}
+
+.a-whatsFor .d-title {line-height: 1.2; font-weight: bold; font-size: 27px; margin-bottom: 20px; display: inline-block;}
+.a-whatsFor .d-text {margin-top: 25px;}
+
+.a-whatsFor .row .a-ifdic {float: none; max-width: 420px; margin: auto;}
+.a-ifdic img {width: 180px;}
+.a-ifdic .a-logo {background: #2C498D; padding: 10px 10px 20px 10px;}
+.a-ifdic .a-supporters {background: #f2f2f2;}
 
 /************* RESPONSIVE CSS ****************/
+
+@media (min-width: 768px) {
+	#qbila-forGovernment .d-bgImage {
+		background-image: url('/img/governmentLarge_light.png');
+		background-position: 110% 120px;
+		background-size: 400px 400px;
+	}
+
+	#qbila-forCitizen .d-bgImage {
+		background-image: url('/img/citizensCircle.png');
+		background-position: 110% 120px;
+		background-size: 400px 344px;
+	}
+
+	#qbila-forResearchers .d-bgImage {
+		background-image: url('/img/microscopeWhite.png');
+		background-position: 100% 120px;
+		background-size: 290px 400px;
+	}
+
+	#qbila-forGovernment .d-bgImage,
+	#qbila-forResearchers .d-bgImage,
+	#qbila-forCitizen .d-bgImage {
+		background-repeat: no-repeat;
+		padding: 70px 0;
+		position: static;
+		background-attachment: fixed;
+	}
+
+	.a-whatsFor .a-pointText {
+		width: 500px; text-align: left;
+	}
+
+	.a-whatsFor > .row > div {
+		float: left;
+	}
+}
 
 @media (max-width: 768px) {
 	.a-qbilaFor .d-text {
@@ -417,6 +502,14 @@ header .logo {
 
 	.a-qbilaWorks {
 	  margin-top: 20px;
+	}
+
+	.a-whatsFor .a-pointImage {
+		margin: 0px auto 15px auto;
+	}
+
+	.a-whatsFor img {
+	  width: 186px;
 	}
 }
 
