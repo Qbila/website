@@ -118,10 +118,9 @@ a.navbar-brand img
 	{background-color: #E04F48; color: #f5f5f5;}
 
 header a
-	{color: #ffffff;}
+	{color: #404040;}
 
-header.navbar
-	{border-bottom: 1px solid #e5e5e5;}
+header .navbar {min-height: 40px; margin-bottom: 0px; border: 0px;}
 
 header	.navbar-toggle
 	{margin-right: 0px;}
@@ -298,7 +297,7 @@ header	.navbar-toggle
 .a-slide.a-slide-half {max-height: 500px;}
 
 .a-slideContent h1 {
-	letter-spacing: 1px; font-size: 50px;
+	letter-spacing: 1px; font-size: 40px;
 }
 
 .a-slideContent .d-text
@@ -314,10 +313,13 @@ header	.navbar-toggle
 
 .d-helpText {margin: 5px 0px; line-height: 1.3;}
 
-.nav>li>a:hover, .nav>li>a:focus {background-color: rgba(255, 255, 255, 0.3); border-color: rgb(116, 231, 252);}
+.nav>li>a:hover, .nav>li>a:focus {background-color: rgba(0,148,255, 0.7); border-color: #0094ff; color: #ffffff;}
 
 @media (min-width: 768px) {
-	.navbar-nav>li>a {padding-bottom: 13px; border-bottom: 3px solid transparent; padding-top: 18px;}
+	.navbar-nav>li>a {
+		padding-bottom: 10px; border-bottom: 3px solid transparent; padding-top: 14px;font-size: 15px;
+  	letter-spacing: 1px; background: rgba(255, 255, 255, 0.6); margin-left: 3px;
+	}
 }
 
 .d-noSidePadding {padding-left: 0px; padding-right: 0px;}
@@ -332,14 +334,16 @@ header	.navbar-toggle
 }
 
 header .logo {
-	font-size: 80px; display: inline-block; padding: 7px 25px 12px 25px;
-	color: #ffffff; background: #0094FF; line-height: 1; border-radius: 0px 0px 16px 17px;
+	font-size: 30px; display: inline-block; padding: 10px 15px 10px 15px; border-bottom: 1px solid #ffffff;
+	color: #ffffff; background: #0094FF; line-height: 1; border-radius: 0px 0px 5px 5px;
 }
+
+header .logo:hover, header .logo:focus {text-decoration: none;}
 
 #qbila-slideOne .a-qbilaPunchline {text-transform: uppercase; font-size: 25px; margin-top: 0px;}
 
 #qbila-slideOne .logo {
-	color: #0094FF; background: rgba(255, 255, 255, 0.5); line-height: 1; color: #0172FC;
+	color: #0094FF; background: rgba(255, 255, 255, 0.5); line-height: 1;
 	padding: 5px 20px; margin: 0px; display: inline-block; font-size: 80px; border-radius: 5px;
 }
 /*border: 3px solid #0094ff;*/
@@ -388,26 +392,26 @@ header .logo {
 .d-noSidePadding .row {margin-left: 0px; margin-right: 0px;}
 
 .a-social ul li {display: inline-block; padding: 10px 15px; font-size: 20px; }
-.a-social a {color: #404040;}
+.a-social a {color: #ffffff;}
 .a-social a:hover, .a-social a:focus {text-decoration: none; color: #000000;}
 
 .a-nextSlide {position: absolute; bottom: 0px; width: 100%; text-align: center;}
 
-#aboutQbila-believe {height: 100%; background: #0951B6; color: #ffffff;}
+#aboutQbila-believe {height: 100%; background: #0094ff; color: #ffffff;}
 #aboutQbila-believe h1 {color: #ffffff;}
 
-#qbilaWeb-footer {padding-top: 10px; border-top: 1px solid #404040;}
+#qbilaWeb-footer {padding-top: 10px; border-top: 1px solid #ffffff; background: #0094FF;}
 
 #qbila-forGovernment .d-bgImage,
 #qbila-forCitizen .d-bgImage,
 #qbila-forResearchers .d-bgImage,
-#qbila-asSeenIn .d-bgImage
-	{padding: 45px 0;}
+#qbila-soFar .d-bgImage
+	{padding: 70px 0;}
 
 #qbila-forGovernment .a-slideContent,
 #qbila-forResearchers .a-slideContent,
 #qbila-forCitizen .a-slideContent,
-#qbila-asSeenIn .a-slideContent {
+#qbila-soFar .a-slideContent {
 	font-size: 22px;
 }
 
@@ -446,7 +450,19 @@ header .logo {
 .a-ifdic .a-logo {background: #2C498D; padding: 10px 10px 20px 10px;}
 .a-ifdic .a-supporters {background: #f2f2f2;}
 
+.a-asSeenIn img {max-width: 170px; max-height: 70px; padding: 10px;}
+.a-asSeenIn {width: 100%; white-space: normal; border-top: 1px solid #0094FF; padding: 15px;}
+.a-rightIcons, .a-leftIcons {display: inline-block; padding: 0px;}
+
+button.navbar-toggle {background: #0094ff;}
+
+
 /************* RESPONSIVE CSS ****************/
+
+@media (min-width: 992px) {
+	.a-rightIcons {text-align: left;}
+	.a-leftIcons {text-align: right;}
+}
 
 @media (min-width: 768px) {
 	#qbila-forGovernment .d-bgImage {
@@ -471,7 +487,7 @@ header .logo {
 	#qbila-forResearchers .d-bgImage,
 	#qbila-forCitizen .d-bgImage {
 		background-repeat: no-repeat;
-		padding: 70px 0;
+		padding: 90px 0;
 		position: static;
 		background-attachment: fixed;
 	}
@@ -483,9 +499,17 @@ header .logo {
 	.a-whatsFor > .row > div {
 		float: left;
 	}
+
+	.a-aboutQbila {
+		text-align: left;
+	}
 }
 
 @media (max-width: 768px) {
+	.a-aboutQbila {
+		text-align: center;
+	}
+
 	.a-qbilaFor .d-text {
 		padding-top: 30px; padding-left: 25px; text-align: left; padding-right: 0px;
 	}

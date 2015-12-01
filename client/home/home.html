@@ -4,18 +4,46 @@
   <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css" />
   <script src="/js/vendor/particles.min.js"></script>
   <script src="/js/froogaloop2.min.js"></script>
+
 </head>
 
 <template name="home">
-<!--
-  <div class="container-fluid d-noSidePadding" style="position: fixed; width: 100%; z-index: 1;">
-    <header style="background: rgba(255, 255, 255, 0.7);">
-      <div class="container">
-          <span class="comfortaa logo">Q</span>
+
+  <div class="container-fluid d-noSidePadding" style="position: fixed; width: 100%; z-index: 1; border-top: 5px solid #0094ff;">
+    <header style="background: rgba(255, 255, 255, 0.5); height: 45px;">
+      <div class="container" style="font-weight: bold; padding: 0px;">
+        <nav class="navbar" style="border-top: 0px">
+          <div class="navbar-header" style="padding: 0px;">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="comfortaa logo" href="#qbila-slideOne">Qbila</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#aboutQbila-believe">We Believe</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How It Works <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#qbila-forGovernment">For Governments</a></li>
+                  <li><a href="#qbila-forCitizen">For Citizens</a></li>
+                  <li><a href="#qbila-forResearchers">For Researchers</a></li>
+                </ul>
+              </li>
+              <li><a href="#qbila-soFar">So Far</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
   </header>
   </div>
--->
+
 
   <div class="container-fluid a-slideContainer d-noSidePadding">
     <div class="row a-slide d-bgImage" id="qbila-slideOne">
@@ -23,52 +51,71 @@
       <div class="text-center a-slideContent">
           <div class="container">
             <div class="row">
-              <div class="col-sm-12">
-                <h1 class="comfortaa logo">
+              <div class="col-sm-5">
+                <h1 class="comfortaa logo" style="font-size: 65px; margin-top: 10px;">
                  Qbila
                 </h1>
-                <h1 class="chunkfive a-qbilaPunchline">
+                <h1 class="chunkfive a-qbilaPunchline" style="font-size: 20px;">
                   <span>Socializing Governance</span>
                 </h1>
+                <div class="">
+                  <!--<button class="btn btn-primary">Know More</button>-->
+                </div>
               </div>
-              <div class="col-sm-12 a-qbilaVideo">
-                <div class="d-wrapper">
-                  <iframe id="pageVideo"
-                    src="https://player.vimeo.com/video/107754494?autoplay=0&api=1&color=ffffff&title=0&byline=0&portrait=0"
-                    frameborder="0"
-                    webkitallowfullscreen mozallowfullscreen allowfullscreen>
-                  </iframe>
-
-                  <div class="hidden-xs a-openVideoInModal" data-toggle="modal" data-target=".a-videoModal"></div>
-
-                  <div class="modal fade a-videoModal" tabindex="-1" role="dialog" data-backdrop="static">
-                    <span type="button"
-                            class="glyphicon glyphicon-remove"
-                            data-dismiss="modal"
-                            aria-label="Close">
-                    </span>
-                    <div class="modal-dialog modal-lg">
-                      <div>
-                        <iframe id="modalVideo"
-                          src="https://player.vimeo.com/video/107754494?autoplay=0&api=1&color=ffffff&title=0&byline=0&portrait=0"
-                          frameborder="0"
-                          webkitallowfullscreen mozallowfullscreen allowfullscreen>
-                        </iframe>
-                      </div>
-                    </div>
-                  </div>
-
+              <div class="col-sm-7 a-aboutQbila" style="">
+                <div class="" style="display: inline-block; padding: 20px; font-size: 22px; background: rgba(255, 255, 255, 0.5);">
+                  Qbila helps you know about or communicate with government organizations serving places you live or care about.
                 </div>
               </div>
             </div>
           </div>
-
       </div>
-      <div class="a-nextSlide">
-        <span class="d-button">
-          <div class="">Know More</div>
-          <i class="fa fa-angle-down"></i>
-        </span>
+      <div class=" a-asSeenIn container-fluid hidden-xs" style="position: absolute; bottom: 0px; border-top: 0px;">
+        <div class="row">
+          <div class="d-title text-center">Supported By</div>
+          <div class="d-wrapper row text-center">
+            <div class="col-sm-12 col-md-6 a-leftIcons">
+              <img src="./img/myGov.png" />
+              <img src="./img/intel.png" style="height: 55px;" />
+              <img src="./img/ciieIIMA.png" style="height: 60px" class="hidden-xs" />
+              <img src="./img/dstGOI.png" style="display: none;"/>
+            </div>
+            <div class="">
+              <img src="./img/ciieIIMA.png" class="visible-xs-inline-block" style="height: 60px" />
+              <img src="./img/wefLogo.png" class="visible-xs-inline-block" />
+            </div>
+            <div class="col-sm-12 col-md-6 a-rightIcons">
+              <img src="./img/diety.png" style="display: none;" />
+              <img src="./img/wefLogo.png" class="hidden-xs" />
+              <img src="./img/mastercard-logo.png" />
+              <img src="./img/center-for-international-development.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" a-asSeenIn container-fluid visible-xs-block" style="padding-top: 90px; padding-bottom: 90px;">
+      <div class="row">
+        <div class="d-title text-center">Supported By</div>
+        <div class="d-wrapper row text-center">
+          <div class="col-sm-12 col-md-6 a-leftIcons">
+            <img src="./img/myGov.png" />
+            <img src="./img/intel.png" style="height: 55px;" />
+            <img src="./img/ciieIIMA.png" style="height: 60px" class="hidden-xs" />
+            <img src="./img/dstGOI.png" style="display: none;"/>
+          </div>
+          <div class="">
+            <img src="./img/ciieIIMA.png" class="visible-xs-inline-block" style="height: 60px" />
+            <img src="./img/wefLogo.png" class="visible-xs-inline-block" />
+          </div>
+          <div class="col-sm-12 col-md-6 a-rightIcons">
+            <img src="./img/diety.png" style="display: none;" />
+            <img src="./img/wefLogo.png" class="hidden-xs" />
+            <img src="./img/mastercard-logo.png" />
+            <img src="./img/center-for-international-development.png" />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -142,7 +189,7 @@
             <div class="a-whatsFor" style="margin-top: 40px;">
               <div class="row">
                 <div class=" a-pointImage">
-                  <img src="/img/designPattern.png"/>
+                  <img src="/img/geolocation.png"/>
                 </div>
                 <div class="a-pointText">
                   <b>Qbila is geolocation based public information system</b>
@@ -154,7 +201,7 @@
 
               <div class="row">
                 <div class=" a-pointImage">
-                  <img src="/img/persistentCommunication.png"/>
+                  <img src="/img/higherImpactAtLowerCost.png"/>
                 </div>
                 <div class="a-pointText">
                   <b>Higher Impact at Lower Cost</b>
@@ -178,7 +225,7 @@
 
               <div class="row">
                 <div class="a-pointImage">
-                  <img src="/img/actionable.png" />
+                  <img src="/img/multimediaSupport.png" />
                 </div>
                 <div class="a-pointText">
                   <b>Multimedia support</b>
@@ -188,7 +235,9 @@
               </div>
 
               <div class="row">
-                <div class="a-pointImage"></div>
+                <div class="a-pointImage">
+                  <img src="/img/citizenEngagementAnalytics.png" />
+                </div>
                 <div class="a-pointText">
                   <b>Citizen engagement analytics</b>
                   for better understanding and decision making. Qbila is inherently a
@@ -198,7 +247,9 @@
               </div>
 
               <div class="row">
-                <div class="a-pointImage"></div>
+                <div class="a-pointImage">
+                  <img src="/img/priorityOfIssues.png" />
+                </div>
                 <div class="a-pointText">
                   <b>Priority of issues</b> can be decided with citizens using upvoting and commenting. Giving another perspective
                   to enable decision for impactful action using implementation
@@ -207,7 +258,9 @@
               </div>
 
               <div class="row">
-                <div class="a-pointImage"></div>
+                <div class="a-pointImage">
+                  <img src="/img/targettedCommunication.png" />
+                </div>
                 <div class="a-pointText">
                   <b>Targetted Communication</b>
                   Officials can share information with specific groups based on location and demography.
@@ -231,7 +284,7 @@
             <div class="a-whatsFor" style="margin-top: 40px;">
               <div class="row">
                 <div class=" a-pointImage">
-
+                  <img src="/img/One_app_with_logo.png" />
                 </div>
                 <div class="a-pointText">
                   <b>One application for all government information and communication</b>
@@ -241,7 +294,7 @@
 
               <div class="row">
                 <div class=" a-pointImage">
-
+                  <img src="/img/communication.png" />
                 </div>
                 <div class="a-pointText">
                   <b>Unprecedented Level of Communication</b>
@@ -252,7 +305,9 @@
               </div>
 
               <div class="row">
-                <div class="a-pointImage"></div>
+                <div class="a-pointImage">
+                  <img src="/img/knowSurroundings.png" />
+                </div>
                 <div class="a-pointText">
                   <b>Know what is happening around you</b>,
                   how it affects you and how can you contribute towards making things better for everyone.
@@ -260,7 +315,9 @@
               </div>
 
               <div class="row">
-                <div class="a-pointImage"></div>
+                <div class="a-pointImage">
+                  <img src="/img/followMultipleLocations.png" />
+                </div>
                 <div class="a-pointText">
                   <b>Follow multiple locations</b>
                   you live at or care about. Get information feed from government organisations and people
@@ -269,7 +326,9 @@
               </div>
 
               <div class="row">
-                <div class="a-pointImage"></div>
+                <div class="a-pointImage">
+                  <img src="/img/customizedInformationFeed.png" />
+                </div>
                 <div class="a-pointText">
                   <b>Customized information feed</b>
                   to meet your information needs. We understand that needs of citizens can be different.
@@ -278,7 +337,9 @@
               </div>
 
               <div class="row">
-                <div class="a-pointImage"></div>
+                <div class="a-pointImage">
+                  <img src="/img/setPriority.png" />
+                </div>
                 <div class="a-pointText">
                   <b>Prioritize issues</b> around you. Vote up or share what should be worked on around you
                   to improve lives of everyone. These issues will be followed up till resolved.
@@ -286,7 +347,9 @@
               </div>
 
               <div class="row">
-                <div class="a-pointImage"></div>
+                <div class="a-pointImage">
+                  <img src="/img/actionableInformation.png" />
+                </div>
                 <div class="a-pointText">
                   <b>Actionable Information</b>
                   for active participation in governance. Once you know, know what to do about it.
@@ -311,7 +374,7 @@
 
               <div class="row">
                 <div class=" a-pointImage">
-
+                  <img src="/img/openDocuments.png" />
                 </div>
                 <div class="a-pointText">
                   <b>Open Documents</b>
@@ -322,7 +385,7 @@
 
               <div class="row">
                 <div class="a-pointImage">
-
+                  <img src="/img/openData.png" />
                 </div>
                 <div class="a-pointText">
                   <b>Open Data</b>,
@@ -333,7 +396,7 @@
 
               <div class="row">
                 <div class="a-pointImage">
-
+                  <img src="/img/GIS.png" />
                 </div>
                 <div class="a-pointText">
                   <b>GIS</b>
@@ -342,7 +405,9 @@
               </div>
 
               <div class="row">
-                <div class="a-pointImage"></div>
+                <div class="a-pointImage">
+                  <img src="/img/WriteNShare.png" />
+                </div>
                 <div class="a-pointText">
                   <b>Write and Share</b>
                   Issue centric research can be shared with auhorities and people.
@@ -355,7 +420,7 @@
       </div>
     </div>
 
-    <div class="row" id="qbila-asSeenIn"
+    <div class="row" id="qbila-soFar"
          style="background: #ffffff;">
       <div class="d-bgImage">
         <div class="text-center a-slideContent">
@@ -388,7 +453,7 @@
                 <span class="d-title">Symposium For Inclusive Growth</span>
                 <div class="a-inclusiveGrowth clearfix">
                   <div class="a-logo" style="padding: 0px;">
-                    <img src="/img/cidHarvardLogo.png" />
+                    <img src="/img/center-for-international-development.png" />
                   </div>
                   <div class="a-logo">
                     <img src="/img/mastercard-logo.png" />
@@ -412,120 +477,31 @@
       </div>
     </div>
 
-<!--
-    <div class="" style="color: #ffffff; height: 70px; background: gray; text-align: center; display: none;">
-      we will have a menubar here. it will persist once the user has passed over the first slide.
-
-      when we know better, we choose better.
-
-      We are developing a social platform to bring all open government information and public communication at one place.
-      , website, mobile application
-    </div>
-
-    <div class="row a-slide d-bgImage" id="aboutQbila-Image"
-         style="height: 100%;">
-      <div class="text-center a-slideContent">
-          <div style="margin: auto;">
-            <h1 class="chunkfive">
-              Qbila for Citizens
-            </h1>
-            <div class="">
-              One Mobile/Web Application for all government information and communication
-              Personalized information feed
-              Local issues prioritization
-              Follow multible places.
-              Easy Forms
-            </div>
+    <div class="" id="qbilaWeb-footer">
+      <div class="container" style="padding-left: 0px; padding-right: 0px;">
+        <div class="row">
+          <div class="col-xs-6 a-social" style="padding-left: 0px; padding-right: 0px;">
+            <ul >
+              <li>
+                <a href="https://www.facebook.com/qbila" target="_blank" class="fa fa-facebook"></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/ourqbila" target="_blank" class="fa fa-twitter"></a>
+              </li>
+              <!--
+              <li>
+                <a href="">Blog</a>
+              </li>
+              -->
+            </ul>
           </div>
-      </div>
-    </div>
+          <div class="col-xs-6">
 
-
-
-    <div class="row a-slide d-bgImage" id="aboutQbila-Image"
-         style="height: 100%;">
-      <div class="text-center a-slideContent">
-          <div style="margin: auto;">
-            <h1 class="chunkfive">
-              Qbila for Researchers
-            </h1>
-            <div class="">
-              Computation friendly documents
-              Open documents
-              Data centric journalism
-              Tools for Data and geography
-            </div>
           </div>
-      </div>
-    </div>
-
-
-    <div class="row a-slide d-bgImage" id="aboutQbila-Image"
-         style="height: 100%;">
-      <div class="text-center a-slideContent">
-          <div style="margin: auto;">
-             <h1 class="chunkfive">
-               As seen in
-             </h1>
-          </div>
-          <div class="">
-            <div class="">
-              <img src="./img/mygov.png" style="height: 100px;" />
-            </div>
-          </div>
-      </div>
-    </div>
--->
-    <div class="row" id="qbilaWeb-footer">
-      <div class="col-xs-6 a-social">
-        <ul >
-          <li>
-            <a href="https://www.facebook.com/qbila" target="_blank" class="fa fa-facebook"></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com/ourqbila" target="_blank" class="fa fa-twitter"></a>
-          </li>
-          <!--
-          <li>
-            <a href="">Blog</a>
-          </li>
-          -->
-        </ul>
-      </div>
-      <div class="col-xs-6">
-
+        </div>
       </div>
     </div>
   </div>
-
-<!--
-
-<div >
-pattern by Rohit Arun Rao from the Noun Project
-</div>
-
-
-purpose :
-1. visitor should get as much idea as there is in the presentation and white paper.
-2. sharable on the social sites.
-3. first impression of the project
-4. as seen in
-5. register - save in file somewhere or single database. better if can connect via facebook or twitter or google account.
-
-
-  we are developing a
-  self sustaining,
-  public information system,
-  low cost public information and public communication platform
-  for government and social organisations.
-  by social organisations we mean - organisations that are working on the ground, primary focus on social impact.
-
-  <div class="">
-    <div class="">
-      You will be logged in. You will be told the latest about the system's development progress.
-    </div>
-  </div>
--->
 
   <script src="/js/modules/fullHeightDivs.js"></script>
 

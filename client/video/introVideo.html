@@ -1,0 +1,28 @@
+<template name="introVideo">
+
+  <iframe id="pageVideo"
+    src="https://player.vimeo.com/video/107754494?autoplay=0&api=1&color=ffffff&title=0&byline=0&portrait=0"
+    frameborder="0"
+    webkitallowfullscreen mozallowfullscreen allowfullscreen>
+  </iframe>
+
+  <div class="hidden-xs a-openVideoInModal" data-toggle="modal" data-target=".a-videoModal"></div>
+
+  <div class="modal fade a-videoModal" tabindex="-1" role="dialog" data-backdrop="static">
+    <span type="button"
+            class="glyphicon glyphicon-remove"
+            data-dismiss="modal"
+            aria-label="Close">
+    </span>
+    <div class="modal-dialog modal-lg">
+      <div>
+        <iframe id="modalVideo"
+          src="https://player.vimeo.com/video/107754494?autoplay=0&api=1&color=ffffff&title=0&byline=0&portrait=0"
+          frameborder="0"
+          webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+</template>

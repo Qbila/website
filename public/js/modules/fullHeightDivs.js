@@ -13,6 +13,23 @@ $(document).ready(function(){
 	 * Onload Functions
 	 */
 	resizeSlides();
+	//refreshCanvas();
+
+
+	// particles.js implementation 
+	$(function(){
+    var particleJSJson = 'js/particles.json';
+
+    if(_QG.isSmallScreen.matches){
+      particleJSJson = 'js/particlesSmallScreen.json';
+    }
+
+    particlesJS.load(
+      'qbila-background',
+      particleJSJson,
+      function(){}
+    );
+  });
 
 	window.onresize = function(){
 		resizeSlides();
@@ -21,6 +38,7 @@ $(document).ready(function(){
 	/**
 	 * DOM DEPENDENT FUNCTION DEFINITIONS
 	 */
+
 	function resizeSlides() {
 		viewPortDimensions = getViewPortDimensions();
 
