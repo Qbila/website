@@ -1,0 +1,99 @@
+<template name="loginSignup">
+
+  <div class="a-loginSignup">
+    <div class="" style="background: rgba(255, 255, 255, 0.7); border: 1px solid #d5d5d5; border-radius: 3px; width: 345px; margin: auto;">
+
+      <div class="a-signUpForm" style="display: none; padding: 10px 20px;">
+        <div class="text-center" style="font-weight: bold;">Sign up with</div>
+        <form class="a-signupUser" style="margin-top: 10px;">
+          <div class="form-group">
+            <input type="text" class="form-control" id="signupFullName" name="signupFullName" placeholder="Full Name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="signupEmail" name="signupEmail" placeholder="Email">
+          </div>
+
+          <div class="form-group">
+            <input type="password" class="form-control" id="signupPassword" name="signupPassword" placeholder="Password">
+          </div>
+          <div class="form-group text-center">
+            <div class="" style="display: inline-block;">
+              {{> reCAPTCHA}}
+            </div>
+          </div>
+          <div class="">
+            <a class="btn a-showLoginForm">Cancel</a>
+            <button class="btn btn-primary">Sign Up</button>
+          </div>
+        </form>
+        <div class="text-left" style="margin-top: 10px; font-size: 15px; display: none;">
+          By signing up you indicate that you have read and agree to
+          the Terms of Service and Privacy Policy.
+        </div>
+      </div>
+
+      <div class="a-loginForm" style="padding: 10px 15px;">
+        <div class="">
+          <div class="" style="">
+            <div class="text-center" style="font-weight: bold;">Continue with</div>
+            <div class="" style="margin-top: 10px;">
+              {{#if currentUser}}
+                  {{currentUser.profile.name}}
+
+                  <button id="logout" class="a-logout">Logout</button>
+              {{else}}
+                <a class="btn a-loginWithFacebook" style="background: #507cc0; color: #ffffff; font-weight: bold;">
+                  <span class="fa fa-facebook"></span>
+                  Facebook
+                </a>
+              {{/if}}
+
+              <a class="btn a-loginWithGooglePlus" style="background: #df4930; color: #ffffff; font-weight: bold;">
+                <span class="fa fa-google-plus"></span>
+                Google
+              </a>
+
+              <a class="btn a-loginWithTwitter" style="background: #55acee; color: #ffffff; font-weight: bold;">
+                <span class="fa fa-twitter"></span>
+                Twitter
+              </a>
+            </div>
+            <div class="" style="margin-top: 10px; font-size: 15px;">
+              <a class="a-showSignupForm" style="font-weight: bold;">Continue with email</a> By signing up you indicate that you have read and agree to
+              the Terms of Service and Privacy Policy.
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin: 25px 0px; position: relative; border-top: 1px dashed #d5d5d5;">
+          <div class="" style="position: absolute; width: 100%; top: -10px;">
+            <span style="display: inline-block; background: #ffffff; padding: 0px 5px;">Or</span>
+          </div>
+        </div>
+
+        <form class="a-loginUser">
+          <div class="form-group">
+            <input type="email" class="form-control" id="loginEmail" name="loginEmail" placeholder="Email">
+          </div>
+          <div class="form-group" style="margin-bottom: 5px;">
+            <div class="input-group">
+              <input type="password" class="form-control" id="loginPassword" name="loginPassword" placeholder="Password">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit" style="font-weight: bold;">Log in</button>
+              </span>
+            </div>
+          </div>
+          <div class="" style="font-size: 14px;">
+            <label style="font-weight: normal; margin-right: 10px; margin-bottom: 0px;">
+              <input type="checkbox"> Remember me
+            </label>
+            <div><a class="">Forgot Password</a></div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+
+</template>

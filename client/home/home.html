@@ -51,8 +51,8 @@
       <div class="text-center a-slideContent">
           <div class="container">
             <div class="row">
-              <div class="col-sm-7">
-                <h1 class="comfortaa logo" style="font-size: 48px; margin-top: 10px;">
+              <div class="col-sm-6 col-md-7">
+                <h1 class="comfortaa logo" style="font-size: 48px;">
                  Qbila
                 </h1>
                 <h1 class="chunkfive a-qbilaPunchline" style="font-size: 16px;">
@@ -63,51 +63,37 @@
                     Qbila helps you stay connected with government and social organizations serving places you live or care about.
                   </div>
                 </div>
+
+                <div class=" a-asSeenIn container-fluid visible-sm-block" style="border-top: 0px;">
+                  <div class="row">
+                    <div class="d-title text-center" style="font-size: 14px; margin-bottom: 5px;">Supported By</div>
+                    <div class="d-wrapper row text-center">
+                      <div class="col-sm-12">
+                        <img src="./img/myGov.png" />
+                        <img src="./img/intel.png" style="height: 55px;" />
+                        <img src="./img/ciieIIMA.png" style="height: 60px" class="hidden-xs" />
+                        <img src="./img/dstGOI.png" style="display: none;"/>
+
+                        <img src="./img/ciieIIMA.png" class="visible-xs-inline-block" style="height: 60px" />
+                        <img src="./img/wefLogo.png" class="visible-xs-inline-block" />
+
+                        <img src="./img/diety.png" style="display: none;" />
+                        <img src="./img/wefLogo.png" class="hidden-xs" />
+                        <img src="./img/mastercard-logo.png" />
+                        <img src="./img/center-for-international-development.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
-              <div class="col-sm-5" style="font-size: 16px;">
-                <div class="" style="background: rgba(255, 255, 255, 0.7); border: 1px solid #0095ff; border-radius: 3px; padding: 20px;">
-                  <div class="">
-                    <div class="form-group">
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email or Username">
-                    </div>
-                    <div class="form-group">
-                      <div class="input-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        <span class="input-group-btn">
-                          <button class="btn btn-primary" type="button" style="font-weight: bold;">Log in</button>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="text-center" style="margin: 15px 0px; position: relative; border-top: 1px dashed #d5d5d5;">
-                    <div class="" style="position: absolute; width: 100%; top: -10px;">
-                      <span style="display: inline-block; background: #ffffff; padding: 0px 5px;">Or</span>
-                    </div>
-                  </div>
-                  <div class="">
-                    <div class="" style="margin-top: 10px;">
-                      <div class="text-center" style="font-weight: bold;">Login with</div>
-                      <div class="" style="margin-top: 10px;">
-                        <a class="btn" style="background: #507cc0; color: #ffffff; font-weight: bold;">
-                          <span class="fa fa-facebook"></span>
-                          Facebook
-                        </a>
-                        <a class="btn" style="background: #df4930; color: #ffffff; font-weight: bold;">
-                          <span class="fa fa-google-plus"></span>
-                          Google
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="" style="background: rgba(255, 255, 255, 0.7); border: 1px solid #0095ff; border-radius: 3px; padding: 10px; margin-top: 20px;">
-                  Don't have account? <a style="font-weight: bold;">Sign Up</a>
-                </div>
+              <div class="col-sm-6 col-md-5" style="font-size: 16px;">
+                {{>loginSignup}}
               </div>
             </div>
           </div>
       </div>
-      <div class=" a-asSeenIn container-fluid hidden-xs" style="position: absolute; bottom: 0px; border-top: 0px;">
+      <div class=" a-asSeenIn container-fluid hidden-xs hidden-sm" style="position: absolute; bottom: 0px; border-top: 0px;">
         <div class="row">
           <div class="d-title text-center">Supported By</div>
           <div class="d-wrapper row text-center">

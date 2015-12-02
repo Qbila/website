@@ -179,6 +179,12 @@ header	.navbar-toggle
 /*****************************************************************/
 /************ START: SUPPORT FOR SITE.CSS STYLES*******************/
 /*****************************************************************/
+/*
+@font-face {
+	font-family: 'MyriadPro-Light';
+	src: url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+}
+*/
 
 @font-face {
 	font-family: 'MyriadPro-Light';
@@ -187,6 +193,7 @@ header	.navbar-toggle
 	     url('../fonts/MyriadPro-Light.woff') format('woff'),
 	     url('../fonts/MyriadPro-Light.ttf') format('truetype');
 }
+
 
 @font-face {
 	font-family: 'centuryGothic';
@@ -451,17 +458,24 @@ header .logo:hover, header .logo:focus {text-decoration: none;}
 .a-ifdic .a-supporters {background: #f2f2f2;}
 
 .a-asSeenIn img {max-width: 170px; max-height: 70px; padding: 10px;}
+.a-asSeenIn.visible-sm-block img {max-width: 150px; max-height: 60px; padding: 10px;}
 .a-asSeenIn {width: 100%; white-space: normal; border-top: 1px solid #0094FF; padding: 15px;}
 .a-rightIcons, .a-leftIcons {display: inline-block; padding: 0px;}
 
 button.navbar-toggle {background: #0094ff;}
 
+.a-loginSignup .form-group {margin-bottom: 10px;}
 
 /************* RESPONSIVE CSS ****************/
 
 @media (min-width: 992px) {
 	.a-rightIcons {text-align: left;}
 	.a-leftIcons {text-align: right;}
+}
+
+@media (max-width: 992px) {
+	#qbila-slideOne .container {width: 100%; padding: 0px;}
+	#qbila-slideOne .container > .row > div {padding: 0px;}
 }
 
 @media (min-width: 768px) {
