@@ -1,0 +1,16 @@
+
+<template name="homeLayout">
+
+  <link rel="stylesheet" type="text/css" href="/css/websiteStyles.css" />
+
+  <div class="d-wrapper clearfix d-homeLayout">
+    <div class="" style="position: fixed; width: 100%; z-index: 1;">
+      {{ > navigation }}
+    </div>
+  	<div class="qbilaMain">
+      {{ > yield}}
+    </div>
+    {{ > mobileFooterNav }}
+  </div>
+
+</template>

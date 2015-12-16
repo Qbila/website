@@ -1,0 +1,164 @@
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: rgba(0,148,255, 0.7); border-color: #0094ff; color: #ffffff;
+}
+
+.dropdown-menu .active>a, .dropdown-menu .active>a:hover, .dropdown-menu li>a:hover {
+  background-color: #0094ff;
+  color: #ffffff;
+}
+
+.dropdown-menu > li > a {
+  line-height: 1; padding: 7px 20px;
+}
+
+.dropdown-menu .divider {
+  margin: 5px 0;
+}
+
+
+/****************************************************/
+
+.modal-content {
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, .5);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, .5);
+  border: 0px;
+}
+
+.modal-dialog {
+  width: 90%;
+}
+
+.modal-header .close {
+  margin-top: -10px;
+}
+
+.modal-header {
+  border-bottom: 0px;
+}
+
+.modal-footer {
+  border-top: 0px;
+}
+
+.a-commentUnit {
+  padding: 10px; border: 1px solid #C2D4E4; margin-top: 5px; background: #EFF6FC;
+  padding-left: 60px; position: relative; font-size: 12px;
+}
+.a-commentUnit .d-image img {
+  width: 40px; height: 40px; position: absolute; left: 10px;
+}
+.a-commentUnit .d-Name a {font-weight: bold; letter-spacing: 0.5px;}
+
+.a-postDetail .a-post { padding-top: 5px; padding-bottom: 5px;}
+
+.a-comments .a-citizenResponse .d-unit, .a-citizenResponse {background: #EFF6FC; border: 1px solid #C2D4E4;}
+.a-selectResponse {padding: 10px 0px; text-align: center;}
+
+.a-officialResponseContext {}
+
+.a-officialResponse, .a-comments .a-officialResponse .d-unit {background: #FFDBD1; border: 1px solid #FFB8A5;}
+
+.d-meta {color: #808080; font-size: 12px;}
+
+.a-selectResponse a {color: #404040; font-size: 12px; letter-spacing: 1px; padding: 5px 10px;}
+.a-selectResponse .d-active {padding: 10px; font-weight: bold;}
+
+.a-comments > .d-unit .d-unit {
+  margin-left: 1px; padding-left: 15px; border-left: 1px dashed #d5d5d5;
+}
+
+.a-comments > .d-unit .d-unit .d-commentConnector {
+  width: 15px; border-top: 1px dashed #d5d5d5; position: absolute; left: -15px; top: 30px;
+}
+
+.a-comments > .d-unit {padding: 10px 0px; border-top: 1px dotted #e7e7e7; margin-bottom: 5px;}
+.a-comments > .d-unit:first-child {border-top: 0px; padding: 0px;}
+
+.a-commentorIdentityNActions {
+  font-weight: bold; letter-spacing: 1px; font-size: 13px; text-align: center;
+  height: 100%; background: #FDF4C2; width: 120px; position: absolute;
+  top: 0px; right: 0px; padding: 10px 0px; border-left: 1px solid #e7e7e7;
+}
+.a-commentorIdentityNActions .fa {padding: 10px;}
+
+
+
+body > .d-wrapper, body, html {height: 100%; background: #DFE7EF;}
+.qbilaMain {padding-top: 55px                                                                                                                                                                                                               ; height: 100%;}
+.qbilaMain > div {padding: 15px 10px; height: 100%; overflow-y: hidden; overflow-x: hidden;}
+.qbilaMain .a-actionableIssues {height: 100%; overflow-y: scroll;}
+
+
+.a-postShort .d-unit {border-bottom: 1px solid #d5d5d5; padding: 0px 40px; position: relative;}
+.a-postShort .d-unit.d-detailed, .a-postShort .d-unit:hover {background: #f2f2f2;}
+.a-postShort .d-unit .a-index {position: absolute; left: 0px; height: 100%; padding: 3px 0px; width: 30px;}
+.a-postShort .d-unit .a-index .a-tag {
+  line-height: 45px; height: 100%; width: 100%;
+  text-align: center; color: #ffffff; font-size: 25px; text-transform: uppercase;
+}
+
+.a-postShort .d-unit .a-notification .a-wrapper {
+  display: inline-block; color: #808080;
+}
+
+.a-postShort .d-unit.d-detailed .a-notification .a-wrapper {
+  display: none;
+}
+
+.a-index .a-tag.a-announcement {background: #3BE8B0;}
+.a-index .a-tag.a-announcement:before {content: "a";}
+
+.a-index .a-tag.a-status {background: #0FAB0B;}
+.a-index .a-tag.a-status:before {content: "s";}
+
+.a-index .a-tag.a-policy {background: #a64ca6;}
+.a-index .a-tag.a-policy:before {content: "p";}
+
+.a-index .a-tag.a-form {background: #6666ff;}
+.a-index .a-tag.a-form:before {content: "f";}
+
+.a-index .a-tag.a-issue {background: #ffa500; font-family: times;}
+.a-index .a-tag.a-issue:before {content: "i";}
+
+.a-index .a-tag.a-alert {background: #ff5858;}
+.a-index .a-tag.a-alert:before {content: "!!";}
+
+.a-postShort .d-unit .a-pointer {position: absolute; right: 10px; top: 18px;}
+
+.a-postShort .d-unit .d-content {padding: 10px 0px;}
+.a-postShort .d-unit .a-text {overflow-x: hidden; white-space: nowrap; font-weight: bold; font-size: 13px;}
+.a-postShort .d-unit .a-notification {line-height: 1.2; font-size: 12px;}
+
+.d-commentBy .d-commentMeta a { display: inline-block; margin: 0px 2px;}
+.d-commentBy .d-commentMeta a:first-child {margin-left: 0px;}
+
+.a-postDetailTabs .nav>li>a:hover {
+  background-color: #a0a0a0;
+  border-color: #808080;
+  color: #ffffff;
+}
+
+.a-postDetailTabs .nav>li>a.a-tabLink {
+  border-radius: 0px;
+  padding-right: 0px;
+}
+
+.a-postDetailTabs .nav>li>a.a-tabLink:hover, .a-postDetailTabs .nav>li>a.a-tabLink:focus {
+  background: transparent;
+  border-color: transparent;
+  color: #23527c;
+}
+
+header.govDestopNavBar .nav>li>a:hover,
+header.govDestopNavBar .nav>li>a:focus
+  {background-color: #f5f5f5; color: #0094ff;}
+
+.a-postDetail {
+  padding: 0px; margin-left: 0px; margin-right: 0px;
+  padding: 10px 15px; font-family: 'Helvetica Neue', arial; font-size: 12px;
+}
+.a-postDetail .a-postTitle {
+  padding: 10px 15px;
+}
+.a-postDetail .a-postTitle .d-text {line-height: 25px; font-size: 18px;}
+.a-postDetail .a-postTitle .d-subtext {font-size: 13px; line-height: 1.1;}

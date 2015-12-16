@@ -1,0 +1,137 @@
+<template name="navigation">
+
+<!--
+  <div id="mobile-header">
+    <a id="responsive-menu-button" href="#sidr-main">Menu</a>
+  </div>
+-->
+
+  <header class="navbar" style="border-radius: 0px;">
+  	<div class="container clearfix">
+      <div class="row">
+        <div class="navbar-header col-xs-4">
+          <div class="d-sidebarLogo clearfix" id="mobile-header">
+            <a id="responsive-menu-button" href="#sidr-main">
+              <button class="navbar-toggle pull-left" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <span class="navbar-brand logo pull-left" title="Socializing Governance">
+                Q
+              </span>
+            </a>
+          </div>
+    		</div>
+        <div class="a-navbarIcons col-xs-8">
+          <button class="navbar-toggle glyphicon glyphicon-option-vertical" type="button" data-toggle="collapse" data-target=".navbar-collapse"></button>
+          <div class="pull-right">
+            <!--
+            <a class="fa fa-map" href="/myRegion"></a>
+            <a class="fa fa-plus" href="/add"></a>
+            -->
+            <a class="fa fa-user" href="/profile/about"></a>
+          </div>
+        </div>
+      </div>
+  	</div>
+
+    <nav class="navbar-collapse collapse" role="navigation" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li style="padding: 10px; color: #ffffff; font-size: 12px;
+                   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                   line-height: 1; margin-top: -7.5px;">
+          Welcome Karishma
+        </li>
+        <li><a href="/services">Services for you</a></li>
+        <li><a href="/settings">Settings</a></li>
+        <li><a href="/privacy">Privacy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="navigation" style="display: none;">
+    <nav class="nav">
+        <ul>
+            <li class="a-followedCities">
+
+              <!--
+              <span class="" style="padding: 5px;">&nbsp;</span>
+
+              <a href="/know/city/3" class="clearfix a-active">
+                <span class="pull-left">Shivaji Nagar, Pune</span>
+                <span class="pull-right a-notifications">10</span>
+                <span class="pull-right fa fa-check-square-o" style=""></span>
+              </a>
+              <a href="/know/city/1" class="clearfix">
+                <span class="pull-left">R.P. Niwas, Shimla</span>
+                <span class="pull-right a-notifications">10</span>
+                <span class="pull-right fa fa-check-square-o" style=""></span>
+              </a>
+              -->
+              <a href="/home/2" class="clearfix">
+                <span class="pull-left">Shivaji Nagar, Pune</span>
+                <span class="pull-left fa fa-check" style=""></span>
+                <span class="pull-right a-notifications">32</span>
+              </a>
+              <a href="/home/0" class="clearfix a-active">
+                <span class="pull-left">Lajpat Nagar, Delhi</span>
+                <span class="pull-left fa fa-check" style=""></span>
+                <span class="pull-right a-notifications">10</span>
+              </a>
+              <a href="/home/1" class="clearfix">
+                <span class="pull-left">R.P. Niwas, Shimla</span>
+                <span class="pull-left fa fa-check" style=""></span>
+                <span class="pull-right a-notifications">21</span>
+              </a>
+              <a href="/home/3" class="clearfix">
+                <span class="pull-left">Current Location</span>
+                <span class="pull-right fa fa-map-marker" style=""></span>
+              </a>
+              <a href="/add/city" class="clearfix">
+                <span class="pull-left">Add New Location</span>
+                <span class="pull-right fa fa-plus" style=""></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Delhi
+                <span class="pull-right a-notifications">27</span>
+              </a>
+              <a href="">
+                India
+                <span class="pull-right a-notifications">62</span>
+              </a>
+              <a href="">
+                World
+                <span class="pull-right a-notifications">50</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Improve your Feed
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Help
+              </a>
+            </li>
+        </ul>
+    </nav>
+  </div>
+
+  <style>
+    #mobile-header {
+        display: none;
+    }
+
+    @media only screen and (max-width: 767px){
+        #mobile-header {
+            display: block;
+        }
+    }
+  </style>
+
+</template>

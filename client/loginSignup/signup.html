@@ -1,0 +1,75 @@
+<head>
+  <script src="/js/zxcvbn.js"></script>
+</head>
+
+<template name="signup">
+
+<style>
+body > .d-wrapper, body, html {background: #ffffff;}
+</style>
+
+<div style="padding-top: 30px;">
+  <div class="row">
+    <div class="col-xs-12 col-sm-9 col-sm-offset-3">
+      <div class="a-signUpForm">
+        <div class="text-left" style="font-weight: bold; padding-bottom: 15px; font-size: 23px;">New to Qbila? Sign up</div>
+        <form class="a-signUpUser" style="margin-top: 5px;">
+          <div class="clearfix form-group a-nameElement">
+            <div class="col-sm-5 a-inputElement">
+              <input type="text" class="form-control" id="signupFullName" name="signupFullName" placeholder="Full Name">
+            </div>
+            <div class="col-sm-7 a-errors help-block">
+              <div class="sidetip">
+                <p class="isaok error">&nbsp;</p>
+                <p class="blank invalid error" role="alert">What's your name?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="clearfix form-group a-emailElement">
+            <div class="col-sm-5 a-inputElement">
+              <input type="text" class="form-control" id="signupEmail" name="signupEmail" placeholder="Email">
+            </div>
+            <div class="col-sm-7 a-errors help-block">
+              <div class="sidetip">
+                <p class="isaok ok">&nbsp;</p>
+                <p class="invalid error">Please enter a valid email.</p>
+                <p class="takenEmail error">This email is already registered. Want to <a href="/login">login</a> or <a href="/account/begin_password_reset">recover your password</a>?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="clearfix form-group a-passwordElement">
+            <div class="col-sm-5 a-inputElement">
+              <input type="password" class="form-control" id="signupPassword" name="signupPassword" placeholder="Password">
+              <div class="d-passwordStrengthMeter">
+                <div class="d-scored"></div>
+              </div>
+            </div>
+            <div class="col-sm-7 a-errors help-block">
+              <div class="sidetip">
+                <p class="isaok ok">&nbsp;</p>
+                <p class="weak error">Please enter a stronger password.</p>
+                <p class="invalid error">Your password must be at least 6 characters.</p>
+                <p class="blank error">Please enter a password.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="clearfix form-group">
+            <div class="col-sm-6 a-inputElement">
+              <button class="btn btn-block btn-lg btn-primary a-signUp" type="submit" style="font-weight: bold; padding: 4px 12px;">Sign Up for Qbila</button>
+            </div>
+          </div>
+
+        </form>
+        <div class="text-left" style="margin-top: 10px; font-size: 15px; display: none;">
+          By signing up you indicate that you have read and agree to
+          the Terms of Service and Privacy Policy.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</template>

@@ -1,10 +1,25 @@
 Meteor.methods({
-  signUpUser: function(){
+  submitSignUpForm: function(signUp){
+
+    if( Validator.isEmail(signUp.email) ) {
+      return Accounts.createUser({email: signUp.email, password: signUp.password, profile: {name : signUp.fullName}});
+    } else {
+      return false;
+    }
+  },
+
+
+  validateEmail: function (email) {
+    // var re = [a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?;
+    // return re.test(email);
+  },
+
+  signUpUser: function(signUp){
     Accounts.createUser({
-        email: signupEmail,
-        password: signupPassword,
+        email: signUp.email,
+        password: signUp.password,
         profile: {
-          name : signupFullName
+          name : signUp.fullName
         }
       },
       function(error){
@@ -15,5 +30,10 @@ Meteor.methods({
         }
       }
     );
+
+  },
+
+  emailRegisteredOrNot: function(email){
+    return Accounts.findUserByEmail(email);
   }
 });

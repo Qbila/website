@@ -1,0 +1,14 @@
+<template name="welcomeUser">
+  <link rel="stylesheet" type="text/css" href="/css/websiteStyles.css" />
+  <link rel="stylesheet" type="text/css" href="/css/govtDashboard.css" />
+
+  <div class="d-wrapper clearfix d-homeLayout">
+    <div class="" style="position: fixed; width: 100%; z-index: 1;">
+      {{ > welcomeNavigation }}
+    </div>
+  	<div class="qbilaMain">
+      {{ > yield}}
+    </div>
+  </div>
+
+</template>

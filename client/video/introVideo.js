@@ -1,3 +1,4 @@
+/*
 $(function() {
     var iframe = $('#modalVideo')[0];
     var player = $f(iframe);
@@ -10,3 +11,4 @@ $(function() {
       player.api('pause');
     });
 });
+*/

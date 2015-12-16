@@ -1,0 +1,50 @@
+<template name="userStatus">
+
+  <link rel="stylesheet" type="text/css" href="/css/appStyles.css" />
+
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-5">
+          <div class="d-whiteUnitBox">
+            <div class="form-group">
+              <label for="officialInvitationCode">Official Account? Enter unique invitation code</label>
+              <input type="text" id="officialInvitationCode" name="officialInvitationCode" class="form-control" placeholder="Enter Invitation Code" />
+            </div>
+            <div class="text-right">
+              <button class="btn btn-primary a-continue" type="submit">Continue</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-7">
+          <div class="d-whiteUnitBox">
+            <form>
+              <div class="form-group">
+                <label for="profileFullName">Full Name</label>
+                <input type="text" class="form-control" id="profileFullName" name="profileFullName" tabindex="1" placeholder="Full Name" value="{{ currentUser.profile.name }}">
+              </div>
+              <div class="form-group">
+                {{currentUser.services.facebook.email}}
+                <label for="profileEmail">Default Email Address</label>
+                <input type="email" class="form-control" id="profileEmail" name="profileEmail" placeholder="Default Email" />
+              </div>
+              <div class="form-group">
+                <label for="profileEmail">Set Password</label>
+                <input type="password" class="form-control" id="profilePassword" name="profilePassword" placeholder="Set Password" />
+              </div>
+              <div class="form-group">
+                <label for="profileEmail">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmProfilePassword" name="confirmProfilePassword" placeholder="Confirm Password">
+              </div>
+              <div class="text-right">
+                <a class="btn a-cancelChanges btn-link">Cancel</a>
+                <button class="btn btn-primary a-saveChanges" type="submit">Save Changes</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</template>

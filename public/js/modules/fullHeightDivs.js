@@ -16,7 +16,7 @@ $(document).ready(function(){
 	//refreshCanvas();
 
 
-	// particles.js implementation 
+	// particles.js implementation
 	$(function(){
     var particleJSJson = 'js/particles.json';
 

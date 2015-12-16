@@ -1,4 +1,5 @@
 Template.loginSignup.events({
+
   'submit form.a-loginUser' : function(e){
     e.preventDefault();
 
@@ -10,49 +11,42 @@ Template.loginSignup.events({
         console.log(error.reason);
       } else {
         // Router.go("home");
+        Router.go("userStatus");
       }
     });
+  },
+
+  'click .a-continueOrLogout' : function(){
+    Router.go("userStatus");
+  },
+
+  'click form.a-signupUser a.a-signUp' : function(){
+    var signUp = {
+      fullName : e.target.signupFullName.value,
+      email : e.target.signupEmail.value,
+      password : e.target.signupPassword.value
+    }
   },
 
   'submit form.a-signUpUser' : function(e){
+    // TODO : we need to send all the code to the backend for crosscheck and preprocessing.
     e.preventDefault();
 
-    signupFullName = e.target.signupFullName.value;
-    signupEmail = e.target.signupEmail.value;
-    signupPassword = e.target.signupPassword.value;
+    var signUp = {
+      fullName : e.target.signupFullName.value,
+      email : e.target.signupEmail.value,
+      password : e.target.signupPassword.value
+    }
 
-    
-  },
-
-  'click .a-loginWithGooglePlus' : function(){
-    console.log('g+');
-  },
-
-  'click .a-loginWithFacebook' : function(event) {
-    Meteor.loginWithFacebook({}, function(err){
-      if (err) {
-        throw new Meteor.Error("Facebook login failed");
-      }
+    Meteor.call('submitSignUpForm', signUp, function(error, result){
+      console.log(error);
+      console.log(result);
     });
   },
 
-  'click .a-loginWithFacebook' : function(event) {
-    Meteor.loginWithFacebook({}, function(err){
-      if (err) {
-        throw new Meteor.Error("Facebook login failed");
-      }
-    });
-  },
+  'click .a-logout' : function(e) {
+    e.stopPropagation();
 
-  'click .a-loginWithTwitter' : function(event) {
-    Meteor.loginWithTwitter({}, function(err){
-      if (err) {
-        throw new Meteor.Error("Twitter login failed");
-      }
-    });
-  },
-
-  'click .a-logout' : function(event) {
     Meteor.logout(function(err){
       if (err) {
         throw new Meteor.Error("Logout failed");

@@ -1,0 +1,108 @@
+<template name="postDetailUnit">
+
+  <div class="col-md-7 d-zeroGapContainer" style="height: 100%;">
+    <div class="d-whiteUnitBox" style="padding: 0px; overflow-x: hidden; overflow-y: scroll;  height: 100%;">
+      <div class="" style="padding: 10px 15px; padding-bottom: 10px; background: #f2f2f2;">
+        <div class="clearfix">
+          <div class="a-officialResponseContext">
+            <div class="clearfix">
+              <div class="col-xs-6" style="padding: 0px;">
+                {{>departmentTags}}
+              </div>
+              <div class="col-xs-6 text-right" style="padding: 0px;">
+                <div class="">
+                  <span class="label" style="display: inline-block; color: #808080; font-size: 12px;">15th Dec 2015</span>
+                </div>
+              </div>
+            </div>
+            <div class="a-post" style="font-size: 18px; letter-spacing: 1px; line-height: 1.2; margin-top: 5px;">
+              Due to limited water reserves, supply to your region will be affected. No water supply on 15th Nov evening.
+            </div>
+          </div>
+        </div>
+        <div class="clearfix" style="font-size: 12px; line-height: 1; padding-top: 10px; padding-bottom: 10px;">
+          <div class="col-sm-6" style="line-height: 1; padding: 0px;">
+            <a class="" style="display: inline-block; padding: 0px 5px;">
+              <span class="fa fa-thumbs-o-up"></span> <b>245</b> Supports
+            </a>
+            <a class="" style="display: inline-block; padding: 0px 5px;">
+              <span class="fa fa-comments-o"></span> <b>25</b> Expressions
+            </a>
+            <a class="" style="display: inline-block; padding: 0px 5px;">
+              <span class="fa fa-share-alt"></span> <b>25</b> Shares
+            </a>
+          </div>
+          <div class="col-sm-6" style="padding: 0px; text-align: right;">
+            <span class="" style="display: inline-block; padding: 0px 5px;">
+              <b>3400</b> Views
+            </span>
+            <span class="" style="display: inline-block; padding: 0px 5px;">
+              <b>25</b> SMS
+            </span>
+            <span class="" style="display: inline-block; padding: 0px 5px;">
+              <b>25</b> App
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="a-postDetailTabs" style="background: #f2f2f2; padding: 0px 20px 20px 20px; padding-top: 0px;">
+        <ul class="nav nav-tabs" style="font-size: 13px;">
+          <li role="presentation" class="active">
+            <a href="#publicDiscussion" aria-controls="publicDiscussion" role="tab" data-toggle="tab">
+              <span class="fa fa-globe"></span>
+              Public Discussion
+            </a>
+          </li>
+          <li role="presentation">
+            <a style="" href="#description" aria-controls="description" role="tab" data-toggle="tab">
+              <span class="fa fa-file-text-o"></span>
+              Description
+            </a>
+          </li>
+          <li role="presentation">
+            <a style="" href="#officialDiscussion" aria-controls="officialDiscussion" role="tab" data-toggle="tab">
+              <span class="fa fa-institution"></span>
+              Official Discussion
+            </a>
+          </li>
+          <li role="presentation">
+            <a style="" href="#statistics" aria-controls="statistics" role="tab" data-toggle="tab">
+              <span class="fa fa-pie-chart"></span>
+              Statistics
+            </a>
+          </li>
+          <li class="pull-right">
+            <a class="a-tabLink">
+              <span class="glyphicon glyphicon-new-window"></span>
+              New Tab
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="publicDiscussion">
+            <div class="clearfix" style="background: #ffffff; font-size: 13px; padding: 10px 15px; border: 1px solid #d5d5d5; border-top: 0px;">
+              <div class="">
+                {{ >comments }}
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="description">
+            Description
+          </div>
+          <div role="tabpanel" class="tab-pane" id="officialDiscussion">
+            Official Discussion
+          </div>
+          <div role="tabpanel" class="tab-pane" id="statistics">
+            Statistics
+          </div>
+        </div>
+
+        <div class="">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

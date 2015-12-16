@@ -1,0 +1,50 @@
+<template name="dashboardListingUnit">
+
+  <div class="col-md-5" style="height: 100%; padding-left: 0px; padding-right: 0px; border-radius: 10px 0px 0px 5px; position: relative; padding-top: 60px;">
+
+    <div class="" style="background-color: #F2F2F2; top: 0px; width: 100%; position: absolute;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(100%, #F2F2F2)); border-radius: 10px 0px 0px 5px;
+    background-image: -moz-linear-gradient(90deg, #F2F2F2 0%, #ffffff);
+    background-image: -ms-linear-gradient(90deg, #F2F2F2 0%, #ffffff);">
+      <div class="a-postTitle">
+        <div class="clearfix">
+          <div class="pull-left">
+            <div class="d-text">
+              Thadi Panchayat's Communications
+            </div>
+            <div class="d-subtext">
+              awesome
+            </div>
+          </div>
+          <div class="pull-right">
+            <button class="btn btn-primary fa fa-plus"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-whiteUnitBox" style="overflow-y: scroll; overflow-x: hidden; height: 100%; padding: 0px; font-family: 'Helvetica Neue', arial;">
+      <div class="a-postShort">
+        {{#each posts}}
+          <div class="d-unit">
+            <div class="a-index">
+              <div class="a-tag a-announcement"></div>
+            </div>
+            <div class="a-pointer">
+              <span class="glyphicon glyphicon-triangle-right" style="color: #b5b5b5;"></span>
+            </div>
+            <div class="d-content">
+              <div class="a-text">
+                {{postTitle}}
+              </div>
+              <div class="a-departmentTags">
+                <span class="label label-danger" style="display: inline-block;">{{organisation.full}}</span>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+</template>

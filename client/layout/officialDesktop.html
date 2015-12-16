@@ -1,0 +1,15 @@
+
+<template name="officialDesktop">
+
+  <link rel="stylesheet" type="text/css" href="/css/websiteStyles.css" />
+  <link rel="stylesheet" type="text/css" href="/css/govtDashboard.css" />
+
+  <div class="d-wrapper clearfix d-homeLayout">
+    {{>governmentDesktopNavigation}}
+
+    <div class="qbilaMain">
+      {{ > yield}}
+    </div>
+  </div>
+
+</template>

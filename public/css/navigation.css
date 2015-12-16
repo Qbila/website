@@ -1,0 +1,107 @@
+body {font-family: 'Roboto', sans-serif;}
+a.logo {font-size: 35px; color: #0094FF;}
+
+.a-organisationLinks a { text-transform: capitalize;}
+.a-organisationLinks a:first-child {}
+.a-socialLinks a {font-size: 24px; color: #404040; margin-right: 10px;}
+.a-socialLinks a:hover {text-decoration: none;}
+
+.d-unit {
+  border: 1px solid #d5d5d5;
+  -moz-box-shadow: 0 0 3px rgba(217, 216, 216, 1);
+  -webkit-box-shadow: 0 0 3px rgba(217, 216, 216, 1);
+  box-shadow: 0 0 3px rgba(217, 216, 216, 1);
+
+  padding: 10px;
+}
+
+.a-organisationInfo {
+  padding-left: 60px;
+  position: relative;
+  min-height: 50px;
+}
+
+.a-organisationInfo .d-image {
+  width: 50px; height: 50px; position: absolute; left: 0px;
+}
+
+.a-actionableServices .a-organisationInfo {
+  padding-left: 50px;
+  position: relative;
+  min-height: 40px;
+}
+
+.a-actionableServices .a-organisationInfo .d-image,
+.a-actionableIssues .a-organisationInfo .d-image {
+  width: 40px; height: 40px; position: absolute; left: 0px;
+}
+
+.a-organisationLogoSmall {
+  width: 40px; height: 40px; display: inline-block;
+}
+
+.a-organisationLogoSmall img,
+.a-organisationInfo .d-image img {
+  width: 100%;
+}
+
+.d-metaInfo a, .d-metaInfo {
+  color: #808080;
+  font-size: 12px;
+}
+
+.a-actionableServices .d-unit .d-content {
+  margin-top: 10px;
+}
+
+.a-actionableServices .d-unit .d-callToAction {
+  margin-top: 10px;
+}
+
+.a-actionableIssues .d-unit .d-content {
+  font-size: 20px;
+}
+
+.a-actionableServices .d-unit, .a-actionableIssues .d-unit {margin-bottom: 15px;}
+
+.a-actionableIssues .d-unit {}
+
+.a-actionableIssues .d-unit .a-organisations {margin-top: 5px;}
+.a-actionableIssues .d-unit .a-organisations a {}
+.a-postMedia {margin-top: 15px;}
+.a-postMedia .d-image img {width: 100%;}
+
+.a-resolvedIssues a {color: #404040;}
+.a-resolvedIssues a:hover {text-decoration: none;}
+.a-resolvedIssues .d-unit {margin-bottom: 15px;}
+
+.a-resolvedIssues .d-unit {font-size: 12px;}
+
+.a-locationInfo .a-geographicHierarchy,
+.a-locationInfo .a-loction
+  {margin-top: 5px; line-height: 1;}
+
+
+.d-sidebarLogo .navbar-toggle {padding-left: 0px; margin-left: -10px;}
+.d-sidebarLogo .navbar-brand {font-size: 25px; padding-top: 16px; padding-left: 0px}
+.d-sidebarLogo a {color: #ffffff;}
+.d-sidebarLogo a:hover {color: #ffffff;}
+
+.navbar-toggle.glyphicon-option-vertical
+  {color: #ffffff; font-size: 20px; padding: 5px 10px;}
+
+.d-mobileSubNav li, .d-mobileFooterNav li {border-left: 1px solid #ffffff; background: #0094FF;}
+.d-mobileSubNav li {border-bottom: 1px solid #ffffff; padding: 0px; border-top: 1px solid #ffffff;}
+.d-mobileFooterNav li {border-top: 1px solid #ffffff; padding: 0px;}
+.d-mobileSubNav li:hover, .d-mobileFooterNav li:hover {background: #59B4F5;}
+.d-mobileSubNav li a, .d-mobileFooterNav li a {line-height: 1;}
+.d-mobileSubNav li:hover a, .d-mobileFooterNav li:hover a { color: #ffffff; text-decoration: none;}
+.d-mobileSubNav a, .d-mobileFooterNav a {padding: 12px 10px; color: #ffffff; display: inline-block; width: 100%; font-size: 12px; font-weight: bold;}
+
+
+header.navbar .a-contextTitle {
+  display: inline; position: absolute;
+  width: 100%; text-align: center;
+  color: #ffffff; font-size: 20px; padding-top: 10px;
+  border-bottom-width: 0px;
+}
