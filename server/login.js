@@ -35,5 +35,10 @@ Meteor.methods({
 
   emailRegisteredOrNot: function(email){
     return Accounts.findUserByEmail(email);
+  },
+
+  sendForgotPasswordMail: function(email) {
+    // send email
+    return true;
   }
 });

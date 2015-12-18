@@ -1,11 +1,14 @@
-<template name="welcomeUser">
+<template name="layout_loginSignup">
   <link rel="stylesheet" type="text/css" href="/css/websiteStyles.css" />
   <link rel="stylesheet" type="text/css" href="/css/govtDashboard.css" />
 
+  <style>
+    body > .d-wrapper, body, html {background: #ffffff;}
+  </style>
 
   <div class="d-wrapper clearfix d-homeLayout">
     <div class="" style="position: fixed; width: 100%; z-index: 1;">
-      {{ > welcomeNavigation }}
+      {{ > loginSignupNavigation }}
     </div>
   	<div class="qbilaMain">
       {{ > yield}}

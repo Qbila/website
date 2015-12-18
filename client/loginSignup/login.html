@@ -1,50 +1,75 @@
 <template name="login">
 
-  <div class="a-loginForm" style="padding: 10px 10px 5px 10px; border: 1px solid #d5d5d5; border-radius: 3px; margin-bottom: 10px;">
-    <div class="">
-      <div class="" style="">
-      </div>
-    </div>
-
-    {{#if currentUser}}
-
-    <div class="a-welcomeBack" style="">
-      <div class="text-center" style="font-weight: bold;">Welcome Back</div>
-      <a class="text-left a-continueOrLogout" style="display: inline-block; border: 1px solid #d5d5d5; padding: 7px; width: 100%; margin: 7px 0px;">
-        <img style="width: 40px; height: 40px;" src="{{ currentUser.services.twitter.profile_image_url }}" />
-        <span class="" style="text-transform: capitalize; font-size: 14px; font-weight: bold;">{{ currentUser.profile.name }}</span>
-        <span class="a-logout close" style="">
-          <span aria-hidden="true">×</span>
-        </span>
-      </a>
+  <div>
+    <div class="a-loginForm" style="padding: 10px 10px 5px 10px; border: 1px solid #d5d5d5; border-radius: 3px; margin-bottom: 10px;">
       <div class="">
-        <a class="a-logout" style="font-weight: bold; font-size: 14px;">Login as another user</a>
-      </div>
-    </div>
+        <div class="" style="">
+          <!--
+              <div class="" style="margin-top: 10px;">
+                <a class="btn a-loginWithFacebook" style="background: #507cc0; color: #ffffff; font-weight: bold;">
+                  <span class="fa fa-facebook"></span>
+                  Facebook
+                </a>
+                <a class="btn a-loginWithGooglePlus" style="background: #df4930; color: #ffffff; font-weight: bold;">
+                  <span class="fa fa-google-plus"></span>
+                  Google
+                </a>
+                <a class="btn a-loginWithTwitter" style="background: #55acee; color: #ffffff; font-weight: bold;">
+                  <span class="fa fa-twitter"></span>
+                  Twitter
+                </a>
+              </div>
+              -->
+              <!--
+            <div class="" style="margin-top: 10px; font-size: 15px;">
+              <div>
+                <a class="a-showSignupForm" style="font-weight: bold;">Signup with email</a>
+              </div>
 
-    {{else}}
-
-    <form class="a-loginUser">
-      <div class="form-group">
-        <input type="text" class="form-control" id="loginEmail" name="loginEmail" placeholder="Email">
-      </div>
-      <div class="form-group" style="margin-bottom: 5px;">
-        <div class="input-group">
-          <input type="password" class="form-control" id="loginPassword" name="loginPassword" placeholder="Password">
-          <span class="input-group-btn">
-            <button class="btn btn-primary" type="submit" style="font-weight: bold;">Log in</button>
-          </span>
+            </div>
+          -->
         </div>
       </div>
-      <div class="" style="font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
-        <label style="font-weight: normal; margin-right: 10px; margin-bottom: 0px;">
-          <input type="checkbox" style="vertical-align: -2px;"> Remember me
-        </label>
-        <a class="">Forgot Password</a>
+
+      {{#if currentUser}}
+
+      <div class="a-welcomeBack" style="">
+        <div class="text-center" style="font-weight: bold;">Welcome Back</div>
+        <a class="text-left a-continueOrLogout" style="display: inline-block; border: 1px solid #d5d5d5; padding: 7px; width: 100%; margin: 7px 0px;">
+          <img style="width: 40px; height: 40px;" src="{{ currentUser.services.twitter.profile_image_url }}" />
+          <span class="" style="text-transform: capitalize; font-size: 14px; font-weight: bold;">{{ currentUser.profile.name }}</span>
+          <span class="a-logout close" style="">
+            <span aria-hidden="true">×</span>
+          </span>
+        </a>
+        <div class="">
+          <a class="a-logout" style="font-weight: bold; font-size: 14px;">Login as another user</a>
+        </div>
       </div>
-    </form>
 
-    {{/if}}
+      {{else}}
+
+      <form class="a-loginUser">
+        <div class="form-group">
+          <input type="text" class="form-control" id="loginEmail" name="loginEmail" placeholder="Email">
+        </div>
+        <div class="form-group" style="margin-bottom: 5px;">
+          <div class="input-group">
+            <input type="password" class="form-control" id="loginPassword" name="loginPassword" placeholder="Password">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="submit" style="font-weight: bold;">Log in</button>
+            </span>
+          </div>
+        </div>
+        <div class="" style="font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+          <label style="font-weight: normal; margin-right: 10px; margin-bottom: 0px;">
+            <input type="checkbox" style="vertical-align: -2px;"> Remember me
+          </label>
+          <a href="{{pathFor 'forgotPassword'}}" class="">Forgot Password</a>
+        </div>
+      </form>
+
+      {{/if}}
+    </div>
   </div>
-
 </template>

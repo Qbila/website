@@ -1,5 +1,4 @@
 Template.loginSignup.events({
-
   'submit form.a-loginUser' : function(e){
     e.preventDefault();
 
