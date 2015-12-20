@@ -70,7 +70,7 @@ Qbila.handleInvalidEmail = function(emailElement){
 
   if( validEmail ){
 
-    // this is not working :(
+    // this is not working :( How to call server function from client.
     if ( Meteor.call('emailRegisteredOrNot', emailElement.value) ) {
       $(emailElement).parents('.a-emailElement').addClass('takenEmail has-error');
       return false;

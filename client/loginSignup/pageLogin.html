@@ -1,5 +1,97 @@
 <template name="pageLogin">
-  <div class="" style="background: #ffffff;">
-    {{>login}}
+
+  <div class="clearfix" style="padding-top: 30px;">
+
+    {{#if pageAlerts }}
+      <div class="a-pageAlerts">
+        <div class="alert alert-dismissible {{pageAlerts}}">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    {{/if}}
+
+    <div class="col-xs-12 col-sm-9 col-sm-offset-3">
+      <div>
+        <div class="a-loginForm">
+
+          {{#if currentUser}}
+
+          <div class="a-welcomeBack clearfix" style="margin-bottom: 20px;">
+            <div class="col-sm-5" style="padding: 0px;">
+              <div class="text-center" style="font-weight: bold;">Welcome Back</div>
+              <a class="text-left a-continueOrLogout" style="display: inline-block; border: 1px solid #d5d5d5; padding: 7px; width: 100%; margin: 7px 0px;">
+                <img style="width: 40px; height: 40px;" src="{{ currentUser.services.twitter.profile_image_url }}" />
+                <span class="" style="text-transform: capitalize; font-size: 14px; font-weight: bold;">{{ currentUser.profile.name }}</span>
+                <span class="a-logout close" style="">
+                  <span aria-hidden="true">×</span>
+                </span>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="text-left" style="font-weight: bold; padding-bottom: 15px; font-size: 23px;">
+            Login as another user
+          </div>
+
+          {{else}}
+
+          <div class="text-left" style="font-weight: bold; padding-bottom: 15px; font-size: 23px;">
+            Login to Qbila
+          </div>
+
+          {{/if}}
+
+          <form class="a-loginUser">
+
+            <div class="clearfix form-group a-emailElement">
+              <div class="col-sm-5 a-inputElement">
+                <input type="text" class="form-control" id="loginEmail" name="loginEmail" placeholder="Email">
+              </div>
+              <div class="col-sm-7 a-errors help-block">
+                <div class="sidetip">
+                  <p class="isaok ok">&nbsp;</p>
+                  <p class="invalid error">Please enter a valid email.</p>
+                  <p class="notTakenEmail error">This email is not registered with us. <a href="{{pathFor "signup"}}">Sign Up</a>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix form-group a-passwordElement">
+              <div class="col-sm-5 a-inputElement">
+                <input type="password" class="form-control" id="loginPassword" name="loginPassword" placeholder="Password">
+              </div>
+              <div class="col-sm-7 a-errors help-block">
+                <div class="sidetip">
+
+                </div>
+              </div>
+            </div>
+
+            <div class="" style="font-size: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">
+              <button class="btn btn-primary" type="submit" style="font-weight: bold; margin-right: 10px;">
+                Login
+              </button>
+              <label style="font-weight: normal; margin-right: 10px; margin-bottom: 0px;">
+                <input type="checkbox" style="vertical-align: -2px;"> Remember me
+              </label>
+              <a href="{{pathFor 'forgotPassword'}}" class="">Forgot Password</a>
+            </div>
+
+            <div class="" style="margin-top: 10px; padding-top: 10px; font-size: 16px">
+              New to Qbila? <a href="{{pathFor 'signup'}}">Sign up now</a>
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+
+    </div>
+
+
   </div>
+
 </template>

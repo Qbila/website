@@ -7,10 +7,6 @@ Template.signup.events({
     Qbila.handleInvalidEmail(event.target);
   },
 
-  'change #signupPassword, keypress #signupPassword': function(event){
-    Qbila.handleInvalidPassword(event.target);
-  },
-
   'submit form.a-signUpUser' : function(e){
     // TODO : we need to send all the code to the backend for crosscheck and preprocessing.
     e.preventDefault();
